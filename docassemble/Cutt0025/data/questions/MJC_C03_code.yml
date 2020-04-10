@@ -1,0 +1,21 @@
+---
+code: |
+  MJCcolumn_header = ""
+  
+  for MJCitem in MJCfamily_info[0]:
+    MJCcolumn_header += MJCitem + '|'
+---
+code: |
+  MJCdashes = "---"
+  for i in range(len(MJCfamily_info[0]) - 1):
+    MJCdashes += "|---"
+---
+code: | 
+  MJCtable_rows = []
+  for MJCitem in MJCfamily_info:
+      MDrow = ""
+      for MJCkey in MJCitem:
+        MDrow += str(MJCitem[MJCkey]) + '|'
+      MDrow = MDrow[:-1]
+      MJCtable_rows.append(MDrow)
+---

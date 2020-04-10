@@ -1,0 +1,27 @@
+objects:
+  - MJCfamily_info: DADict
+---
+variable name: MJCfamily_info
+use objects: True
+data:
+  - First Name: Melissa
+    Last Name: Cutts
+    Age: 36
+    Hobbies: Dancing
+    Like pets?: True
+  - First Name: Edward
+    Last Name: Gonzalez
+    Age: 37
+    Hobbies: Soccer
+    Likes Pets?: False
+  - First Name: Enrique
+    Last Name: Gonzalez
+    Age: 9
+    Hobbies: Playing fortnight
+    Likes pets?: false
+  - First Name: Christian
+    Last Name: Gonzalez
+    Age: 5
+    Hobbies: Transformers
+    Likes pets?: True
+---
