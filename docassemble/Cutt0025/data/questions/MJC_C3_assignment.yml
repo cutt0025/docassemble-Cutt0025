@@ -1,0 +1,33 @@
+---
+include:
+  - MJC_co3_ data_block.yml
+  - MJC_C03_code.yml
+---
+mandatory: True
+question:  Family Data in a Table
+subquestion: |
+ 
+  ${ MJCcolumn_header }
+  ${ MJCdashes }
+  %for MJCitem in MJCtable_rows:
+  ${ MJCitem }
+  %endfor
+
+buttons:
+  - Correct: continue
+  - incorrect: return
+---
+question: Your document is ready.
+attachment:
+  - name: Table of information
+    filename: mjc_c3_output
+    valid formats:
+      - pdf
+    content: |
+      ${ MJCcolumn_header }
+      ${ MJCdashes }
+      %for MJCitem in MJCtable_rows:
+      ${ MJCitem }
+      %endfor
+    pdf/a: True
+mandatory: True
